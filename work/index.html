@@ -1,0 +1,59 @@
+<!-- Le wireframe se trouve ici https://wireframe.cc/lCCTXR -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Timer</title>
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+
+<header class="head">
+        <h1>The time I have to wait</h1>
+        <div id="set-time" class="set-time show" data-time="60">
+            Time : <span>1 minute</span>
+            <button>Change</button>
+        </div>
+    
+        <form id="change-time" class="change-form">
+            <div class="field">
+                <label for="minutes">Minutes</label>
+                <input type="number" id="minutes" name="minutes" maxlength="60">
+            </div>
+    
+            <div class="field">
+                <label for="seconds">Seconds</label>
+                <input type="number" id="seconds" name="seconds" maxlength="60">
+            </div>
+            <input type="submit" class="change-btn" value="Change">
+        </form>
+  
+</header>
+   
+<main id="counter" class="main">
+    
+        <button class="btn js-starter"><img src="css/play.svg" alt="Start the timer" width="100" height="100"></button>
+        
+        <div class="counter-box js-countdown">
+            <span class="counter-min">01</span> : <span class="counter-sec">00</span>
+        </div>
+        
+        <div class="counter-btn js-countdown">
+            <button class="btn js-stop">
+              <img class="btn-pause" src="css/pause.svg" alt="Stop the time" width="25" height="25" aria-hidden="false">
+              <img class="btn-play" src="css/play.svg" alt="Launch again" width="25" height="25" aria-hidden="true">
+            </button>
+            <button class="btn js-start"><img src="css/restart.svg" alt="Reset it" width="25" height="25"></button>
+        </div>
+    
+</main>
+
+
+
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
